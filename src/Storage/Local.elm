@@ -1,4 +1,4 @@
-module Storage.Local (..) where
+module Storage.Local exposing (..) 
 
 import Native.Storage.Local
 import Json.Decode as Json

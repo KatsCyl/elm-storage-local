@@ -1,10 +1,5 @@
-Elm.Native.Storage = {};
-Elm.Native.Storage.Local = {};
-Elm.Native.Storage.Local.make = function(elm) {
-  elm.Native = elm.Native || {};
-  elm.Native.Storage = elm.Native.Storage || {};
-  elm.Native.Storage.Local = elm.Native.Storage.Local || {};
-  if (elm.Native.Storage.Local.values) return elm.Native.Storage.Local.values;
+var _avh4$elm_storage_local$Native_Storage_Local = function()
+{
 
   var available = !!window.localStorage;
 
@@ -36,9 +31,9 @@ Elm.Native.Storage.Local.make = function(elm) {
     return { ctor: "Ok", _0: value }
   }
 
-  return elm.Native.Storage.Local.values = {
+  return {
     get: get,
     put: F2(put),
     isAvailable : available
   };
-};
+}();
